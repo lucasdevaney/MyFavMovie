@@ -1,20 +1,12 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
 import SearchIcon from './search.svg';
-import MovieCard from "./MovieCard";
+import Logo from './logo.svg'
+import MovieCard from "./Components/MovieCard";
 
 const API_KEY = "25aa57baf48dd93d47823cfb941b255c";
 const API_URL = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}`;
 
-/*
-const movie1 = {
-
-    "title": "Kung Fu Panda 4",
-    //"poster_path":"/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg",
-    "poster_path": "N/A",
-    "release_date": "2024-03-02",
-}
-*/
 
 const App = () => {
     const [movies, setMovies] = useState([]);
@@ -34,7 +26,7 @@ const App = () => {
 
     return (
         <div className="app">
-            <h1>MovieLand</h1>
+            <img src={Logo} alt="Logo" />
 
             <div className="search">
                 <input

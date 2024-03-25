@@ -1,4 +1,5 @@
 import React from "react";
+import noImage from "../no-image.png";
 
 const MovieCard = ({movie}) => {
     return (
@@ -9,7 +10,7 @@ const MovieCard = ({movie}) => {
 
             <div>
                 <img 
-                    src={movie.poster_path !== null ? `https://image.tmdb.org/t/p/w400${movie.poster_path}` : 'https://via.placeholder.com/400'} 
+                    src={movie.poster_path !== null ? `https://image.tmdb.org/t/p/w400${movie.poster_path}` : noImage} 
                     alt={movie.title} 
                 />
             </div>

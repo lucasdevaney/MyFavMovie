@@ -26,6 +26,10 @@ body {
   flex-direction: column;
 }
 
+.app img {
+    width: 20rem;
+}
+
 h1 {
   font-size: 3rem;
   letter-spacing: 0.9px;
@@ -39,6 +43,8 @@ h1 {
   -webkit-text-fill-color: transparent;
   width: fit-content;
 }
+
+
 
 .search {
   width: 71%;
