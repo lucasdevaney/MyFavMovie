@@ -1,7 +1,7 @@
 import React from "react";
 import noImage from "../no-image.png";
 
-const MovieCard = ({ movie }) => {
+const MovieCard = ({ movie, viewMovieInfo }) => {
     return (
         <div className="movie">
             <div>
@@ -15,17 +15,12 @@ const MovieCard = ({ movie }) => {
                 />
             </div>
             <div className="card-content">
-            <p><a href="#">VIEW DETAILS</a></p>
+                <p><a href="#" onClick={() => viewMovieInfo(movie.id)}>VIEW DETAILS</a></p>
                 <h3>{movie.title}</h3>
-                
             </div>
-<>
-            <div >
-                
-            </div>
-            </>
         </div>
     )
 }
 
 export default MovieCard;
+
