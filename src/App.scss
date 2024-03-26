@@ -197,6 +197,34 @@ h1 {
   opacity: 1;
 }
 
+.card-content {
+margin-bottom: 0x;
+height: 160px;
+/*position: relative;*/
+
+p {
+  margin-bottom: 15px;
+  padding-left: 150px;
+}
+
+p a {
+    text-decoration: none;
+    color:#1f2123;
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 0;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #ffffff;
+    padding: 5px;
+    
+}
+}
+
+.movie:hover .card-content p a {
+  opacity: 1;
+}
+
 @media screen and (max-width: 600px) {
   .app {
     padding: 4rem 2rem;
